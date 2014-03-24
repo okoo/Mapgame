@@ -95,7 +95,7 @@ public class Map {
     public int distance() {
         int distance_x = playerX - objectX;
         int distance_y = playerY - objectY;
-        return distance_x + distance_y;
+        return Math.abs(distance_x) + Math.abs(distance_y);
     }
 
     @Override
